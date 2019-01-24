@@ -60,23 +60,81 @@ body {
 div.hero {
     height: 100vh;
     width: 100%;
-    position: relative;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    overflow: hidden;
 }
+
+div.site-title {
+    // background-color: rgba(100%, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & h1 {
+        text-align: center;
+        font-family: @font-headings;
+        color: @color-shell;
+        font-size: 2rem;
+        @media (min-width: 48rem) and (min-height: 35rem) {
+            font-size: 4rem;
+        };
+        @media (min-width: 100rem) and (min-height: 35rem) {
+            font-size: 6rem;
+        };
+    }
+}
+
+div.hero-img {
+    // background-color: rgba(0, 0, 100%, 0.2);
+    padding: 1rem;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+div.styles {
+    // background-color: rgba(0, 100%, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & a {
+        flex: 1 0 4rem;
+        font-family: @font-headings;
+        color: @color-shell;
+        font-size: 1rem;
+        @media (min-width: 48rem) and (min-height: 35rem) {
+            font-size: 1.5rem;
+        };
+        @media (min-width: 100rem) and (min-height: 35rem) {
+            font-size: 2rem;
+        };
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        display: block;
+        height: 5rem;
+        padding: 1rem;
+        // background-color: rgba(0, 0, 0, 0.2);
+        overflow: visible;
+        & img {
+            height: 1.5rem;
+            transition: transform 0.3s;
+        }
+        &:hover { & img {
+            transform: rotate(30deg);
+        }}
+    }
+}
+
+
+
 
 h1.site-title {
     position: absolute;
     top: 6vh;
     width: 100%;
-    font-family: @font-headings;
-    color: @color-shell;
-    text-align: center;
-    font-size: 2rem;
-    @media (min-width: 35rem) and (min-height: 45rem) {
-        font-size: 4rem;
-    };
-    @media (min-width: 100rem) and (min-height: 35rem) {
-        font-size: 6rem;
-    };
 }
 
 img.hero-img {

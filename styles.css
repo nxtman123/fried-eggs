@@ -116,6 +116,7 @@ div.hero {
   overflow: hidden;
 }
 div.site-title {
+  background-color: rgba(255, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,6 +138,7 @@ div.site-title h1 {
   }
 }
 div.hero-img {
+  background-color: rgba(0, 0, 255, 0.2);
   padding: 1rem;
 }
 div.hero-img img {
@@ -145,9 +147,17 @@ div.hero-img img {
   object-fit: contain;
 }
 div.styles {
+  background-color: rgba(0, 255, 0, 0.2);
+  flex-wrap: wrap;
+}
+div.styles,
+div.styles div {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+div.styles div {
+  flex: 1 0 20rem;
 }
 div.styles a {
   flex: 1 0 4rem;
@@ -158,8 +168,8 @@ div.styles a {
   text-decoration: none;
   outline: none;
   display: block;
-  height: 5rem;
   padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
   overflow: visible;
 }
 @media (min-width: 48rem) and (min-height: 35rem) {
@@ -172,9 +182,17 @@ div.styles a {
     font-size: 2rem;
   }
 }
+div.styles a:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 div.styles a img {
   height: 1.5rem;
   transition: transform 0.3s;
+}
+@media (min-width: 100rem) and (min-height: 35rem) {
+  div.styles a img {
+    height: 2rem;
+  }
 }
 div.styles a:hover img {
   transform: rotate(30deg);

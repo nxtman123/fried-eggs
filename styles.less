@@ -53,6 +53,10 @@ background:transparent;
 @color-carton: #98817b;
 @color-pan: #060608;
 
+@break-width-1: 48rem;
+@break-width-2: 100rem;
+@break-height-1: 35rem;
+
 body {
     background-color: @color-stove;
 }
@@ -75,10 +79,10 @@ div.site-title {
         font-family: @font-headings;
         color: @color-shell;
         font-size: 2rem;
-        @media (min-width: 48rem) and (min-height: 35rem) {
+        @media (min-width: @break-width-1) and (min-height: @break-height-1) {
             font-size: 4rem;
         };
-        @media (min-width: 100rem) and (min-height: 35rem) {
+        @media (min-width: @break-width-2) and (min-height: @break-height-1) {
             font-size: 6rem;
         };
     }
@@ -94,7 +98,7 @@ div.hero-img {
     }
 }
 
-div.styles {
+div.style-links {
     background-color: rgba(0, 100%, 0, 0.2);
     flex-wrap: wrap;
     &, & div {
@@ -110,10 +114,10 @@ div.styles {
         font-family: @font-headings;
         color: @color-shell;
         font-size: 1.25rem;
-        @media (min-width: 48rem) and (min-height: 35rem) {
+        @media (min-width: @break-width-1) and (min-height: @break-height-1) {
             font-size: 1.5rem;
         };
-        @media (min-width: 100rem) and (min-height: 35rem) {
+        @media (min-width: @break-width-2) and (min-height: @break-height-1) {
             font-size: 2rem;
         };
         text-align: center;
@@ -128,7 +132,7 @@ div.styles {
         overflow: visible;
         & img {
             height: 1.5rem;
-            @media (min-width: 100rem) and (min-height: 35rem) {
+            @media (min-width: @break-width-2) and (min-height: @break-height-1) {
                 height: 2rem;
             };
             transition: transform 0.3s;

@@ -146,20 +146,20 @@ div.hero-img img {
   height: 100%;
   object-fit: contain;
 }
-div.styles {
+div.style-links {
   background-color: rgba(0, 255, 0, 0.2);
   flex-wrap: wrap;
 }
-div.styles,
-div.styles div {
+div.style-links,
+div.style-links div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-div.styles div {
+div.style-links div {
   flex: 1 0 20rem;
 }
-div.styles a {
+div.style-links a {
   flex: 1 0 4rem;
   font-family: 'Baloo Thambi', cursive, sans-serif;
   color: #cd853f;
@@ -173,27 +173,27 @@ div.styles a {
   overflow: visible;
 }
 @media (min-width: 48rem) and (min-height: 35rem) {
-  div.styles a {
+  div.style-links a {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 100rem) and (min-height: 35rem) {
-  div.styles a {
+  div.style-links a {
     font-size: 2rem;
   }
 }
-div.styles a:nth-child(2n) {
+div.style-links a:nth-child(2n) {
   background-color: rgba(0, 0, 0, 0.3);
 }
-div.styles a img {
+div.style-links a img {
   height: 1.5rem;
   transition: transform 0.3s;
 }
 @media (min-width: 100rem) and (min-height: 35rem) {
-  div.styles a img {
+  div.style-links a img {
     height: 2rem;
   }
 }
-div.styles a:hover img {
+div.style-links a:hover img {
   transform: rotate(30deg);
 }

@@ -179,39 +179,3 @@ div.styles a img {
 div.styles a:hover img {
   transform: rotate(30deg);
 }
-h1.site-title {
-  position: absolute;
-  top: 6vh;
-  width: 100%;
-}
-img.hero-img {
-  padding-top: 28vh;
-  height: 50vh;
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  object-fit: contain;
-}
-div.styles-button-container {
-  position: absolute;
-  bottom: 3rem;
-  width: 100%;
-  text-align: center;
-}
-a.styles-button {
-  display: inline-block;
-  outline: none;
-  transition: transform 0.3s;
-}
-a.styles-button img {
-  width: 10rem;
-}
-@media (min-width: 35rem) and (min-height: 45rem) {
-  a.styles-button img {
-    width: 18rem;
-  }
-}
-a.styles-button:hover,
-a.styles-button:focus {
-  transform: rotate(15deg);
-}

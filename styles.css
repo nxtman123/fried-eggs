@@ -198,7 +198,8 @@ div.style-links a img {
     height: 3rem;
   }
 }
-div.style-links a:hover img {
+div.style-links a:hover img,
+div.style-links a:focus img {
   transform: rotate(30deg);
 }
 div.stovetop {
@@ -256,7 +257,8 @@ a.back-link {
   top: 0.5rem;
   left: 0.5rem;
 }
-a.back-link:hover {
+a.back-link:hover,
+a.back-link:focus {
   background-image: url("img/open_carton.png");
   color: #efefef;
 }
@@ -300,7 +302,8 @@ span.credit a {
   color: #ac6c2d;
   text-decoration: none;
 }
-span.credit a:hover {
+span.credit a:hover,
+span.credit a:focus {
   text-decoration: underline;
 }
 footer {
@@ -327,7 +330,8 @@ footer a {
   text-decoration: none;
   color: #efefef;
 }
-footer a:hover {
+footer a:hover,
+footer a:focus {
   color: #cd853f;
 }
 span.copyright {

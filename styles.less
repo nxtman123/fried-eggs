@@ -138,7 +138,7 @@ div.style-links {
             };
             transition: transform 0.3s;
         }
-        &:hover { & img {
+        &:hover, &:focus { & img {
             transform: rotate(30deg);
         }}
     }
@@ -196,7 +196,7 @@ a.back-link {
     position: fixed;
     top: 0.5rem;
     left: 0.5rem;
-    &:hover {
+    &:hover, &:focus {
         background-image: url("img/open_carton.png");
         color: @color-stove;
     }
@@ -237,7 +237,7 @@ span.credit {
     & a {
         color: darken(@color-shell, 10%);
         text-decoration: none;
-        &:hover {
+        &:hover, &:focus {
             text-decoration: underline;
         }
     }
@@ -265,7 +265,7 @@ footer {
     & a {
         text-decoration: none;
         color: @color-stove;
-        &:hover {
+        &:hover, &:focus {
             color: @color-shell;
         }
     }

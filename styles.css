@@ -303,3 +303,34 @@ span.credit a {
 span.credit a:hover {
   text-decoration: underline;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111111;
+  color: #efefef;
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+footer ul {
+  list-style: none;
+  text-align: left;
+}
+footer ul > a {
+  font-weight: bold;
+}
+footer ul li {
+  padding-left: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #efefef;
+}
+footer a:hover {
+  color: #cd853f;
+}
+span.copyright {
+  padding: 1rem;
+  font-size: 80%;
+}

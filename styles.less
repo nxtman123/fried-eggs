@@ -242,3 +242,36 @@ span.credit {
         }
     }
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+    color: @color-stove;
+    width: 100%;
+    padding: 1rem;
+    font-family: @font-body;
+    & ul {
+        list-style: none;
+        text-align: left;
+        & > a {
+            font-weight: bold;
+        }
+        & li {
+            padding-left: 1rem;
+        }
+    }
+    & a {
+        text-decoration: none;
+        color: @color-stove;
+        &:hover {
+            color: @color-shell;
+        }
+    }
+}
+
+span.copyright {
+    padding: 1rem;
+    font-size: 80%;
+}

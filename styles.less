@@ -49,7 +49,7 @@ background:transparent;
 
 @color-shell: #cd853f;
 @color-yolk: #fabd00;
-@color-stove: #dcdcdc;
+@color-stove: #efefef;
 @color-carton: #98817b;
 @color-pan: #060608;
 
@@ -141,4 +141,38 @@ div.style-links {
             transform: rotate(30deg);
         }}
     }
+}
+
+div.stovetop {
+    position: fixed;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+img.stovetop {
+    width: 100vw;
+    position: absolute;
+    z-index: -10;
+    left: -20vw;
+}
+
+@keyframes frypan {
+    0% { transform: rotate(-75deg) translate(100vw, 0); }
+    50% { transform: rotate(-75deg); }
+    100% { transform: rotate(-120deg); }
+}
+
+img.frypan {
+    width: 85vw;
+    position: absolute;
+    z-index: -9;
+    top: -50vw;
+    left: -13vw;
+    transform: rotate(-120deg);
+    animation-name: frypan;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }

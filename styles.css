@@ -106,7 +106,7 @@ a {
 /* My stylesheet */
 @import ("https://fonts.googleapis.com/css?family=Baloo+Thambi|Roboto");
 body {
-  background-color: #dcdcdc;
+  background-color: #efefef;
 }
 div.hero {
   height: 100vh;
@@ -199,4 +199,40 @@ div.style-links a img {
 }
 div.style-links a:hover img {
   transform: rotate(30deg);
+}
+div.stovetop {
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+img.stovetop {
+  width: 100vw;
+  position: absolute;
+  z-index: -10;
+  left: -20vw;
+}
+@keyframes frypan {
+  0% {
+    transform: rotate(-75deg) translate(100vw, 0);
+  }
+  50% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(-120deg);
+  }
+}
+img.frypan {
+  width: 85vw;
+  position: absolute;
+  z-index: -9;
+  top: -50vw;
+  left: -13vw;
+  transform: rotate(-120deg);
+  animation-name: frypan;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }

@@ -244,6 +244,7 @@ a.back-link {
   font-family: 'Baloo Thambi', cursive, sans-serif;
   font-size: 130%;
   text-decoration: none;
+  outline: none;
   text-align: center;
   color: #cd853f;
   display: block;
@@ -301,6 +302,7 @@ span.credit {
 span.credit a {
   color: #ac6c2d;
   text-decoration: none;
+  outline: none;
 }
 span.credit a:hover,
 span.credit a:focus {
@@ -327,8 +329,9 @@ footer ul li {
   padding-left: 1rem;
 }
 footer a {
-  text-decoration: none;
   color: #efefef;
+  text-decoration: none;
+  outline: none;
 }
 footer a:hover,
 footer a:focus {

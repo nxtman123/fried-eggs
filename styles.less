@@ -184,6 +184,7 @@ a.back-link {
     font-family: @font-headings;
     font-size: 130%;
     text-decoration: none;
+    outline: none;
     text-align: center;
     color: @color-shell;
     display: block;
@@ -237,6 +238,7 @@ span.credit {
     & a {
         color: darken(@color-shell, 10%);
         text-decoration: none;
+        outline: none;
         &:hover, &:focus {
             text-decoration: underline;
         }
@@ -263,8 +265,9 @@ footer {
         }
     }
     & a {
-        text-decoration: none;
         color: @color-stove;
+        text-decoration: none;
+        outline: none;
         &:hover, &:focus {
             color: @color-shell;
         }

@@ -182,23 +182,23 @@ img.frypan {
 
 a.back-link {
     font-family: @font-headings;
-    font-size: 130%;
+    font-size: 140%;
     text-decoration: none;
     outline: none;
     text-align: center;
     color: @color-shell;
     display: block;
-    background-image: url("img/closed_carton.png");
+    background: url("img/carton_button.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: bottom;
+    background-size: cover;
     width: 6rem;
-    height: 4rem;
+    height: 4.5rem;
     position: fixed;
     top: 0.5rem;
     left: 0.5rem;
     &:hover, &:focus {
-        background-image: url("img/open_carton.png");
+        background-position: top;
         color: @color-stove;
     }
 }

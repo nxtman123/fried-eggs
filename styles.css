@@ -268,6 +268,7 @@ div.text-frame {
   box-sizing: border-box;
   padding: 50vh 1rem 3rem 5rem;
   width: 100%;
+  min-height: 100vh;
   z-index: 0;
 }
 @media (min-width: 50rem) and (min-height: 35rem) {
